@@ -1,0 +1,972 @@
+@charset "utf-8";
+
+
+/*clearfix*/
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+
+/*ヘッダー*/
+header{
+	width:100%;
+	height:115px;
+	border-bottom:solid 5px #B4D0FC;
+	margin-top:20px;
+	background:linear-gradient(to bottom, #ffffff 80%, #F0EEEE 100%);
+}
+
+.headercontainer{
+	width:980px;
+	height:auto;
+	margin:0 auto;
+}
+/*七十七銀行ロゴ*/
+.mainlogo{
+	width:360px;
+	float:left;
+}
+.mainlogo img{
+
+}
+.mainlogo p{
+	color:#004EA2;
+	float:right;
+	font-size:12px;
+	margin-top:10px;
+}
+
+/*音声読み上げガイド*/
+.guides_explore{
+	display:flex;
+	justify-content:flex-end;
+	float:right;
+	margin-top:20px;
+}
+.guides{
+	display:flex;
+	float:right;
+}
+.guides ul li{
+	display:inline-block;
+	border:solid 1px #93A6C4;
+	border-radius:3px;
+	font-size:14px;
+	padding:3px;
+	margin-top:5px;
+}
+.guides ul li a{
+	text-decoration:none;
+	
+}
+.guides ul li.min{
+	background-color:#004EA2;
+}
+.guides ul li.min a{
+	color:#ffffff;
+}
+.guides p{
+	font-size:12px;
+	font-weight:bold;
+	margin-right:5px;
+	margin-top:10px;
+}
+.guides p span{
+	border:solid 1px #93A6C4;
+	border-radius:3px;
+	font-size:12px;
+	color:#004EA2;
+	font-weight:bold;
+	margin-right:5px;
+}
+.guides p span a{
+	text-decoration:none;
+	padding:3px 8px;
+	color:#004EA2;
+}
+.guides p span a:hover{
+	background-color:#004EA2;
+	color:#ffffff;
+}
+.explore_box{
+	background-color:#EBEBEB;
+	border-radius:5px;
+	width:147px;
+	height:24px;
+	display:flex;
+	margin-left:10px;
+	padding:3px 0 3px 25px;
+}
+.explore_box input.search{
+	width:115px;
+	background-color:#ebebeb;
+	border:none;
+}
+
+.explore_box input.icon{
+	border-style:none;
+	text-indent:200%;
+	overflow:hidden;
+	cursor:pointer;
+	background:url(images/loupe_pc.png) 50% no-repeat;
+	width:32px;
+	height:auto;
+}
+/*ナビゲーション*/
+.globalnav{
+	width:980px;
+	margin:0 auto;
+}
+nav ul{
+	list-style-type:none;
+	clear:both;
+}
+nav ul li{
+	display:inline-block;
+	font-size:15px;
+	width:240px;
+	height:35px;
+	margin-top:20px;
+	text-align:center;
+}
+nav ul li a{
+	text-decoration:none;
+	color:#333333;
+	font-weight:bold;
+	display: block;
+}
+nav ul li#current{
+	border-bottom:solid 5px #0042A2;
+}
+
+/*右上の案内*/
+.FAQs{
+	width:980px;
+	margin:0 auto;
+	position:absolute;
+	right:250px;
+	top:10px;
+}
+.FAQs ul{
+	text-align:right;
+}
+.FAQs ul li{
+	display:inline-block;
+	font-size:12px;
+	padding-right:20px;
+}
+.FAQs ul li a{
+	color:#000000;
+	position:relative;
+	text-decoration:none;
+}
+.FAQs ul li a:hover{
+	text-decoration:underline;
+}
+.FAQs ul li a::after{
+	position:absolute;
+	right:-15px;
+	content:"";
+	width:0;
+	height:0;
+	border-left:solid 6px #004EA2;
+	border-bottom:solid 6px transparent;
+	border-right:solid 6px transparent;
+	border-top:solid 6px transparent;
+}
+
+/*コンテンツ*/
+.content{
+	display:flex;
+	width:980px;
+	margin:0 auto;
+	margin-top:20px;
+	margin-bottom:30px;
+}
+.leftcontent{
+	width:640px;
+	height:auto;
+}
+.rightcontent{
+	width:259px;
+	height:auto;
+	margin-left:85px;
+}
+/*左側コンテンツ*/
+.mainimage{
+	margin-left:25px;
+}
+.icon_campaign p{
+	font-size:18px;
+	font-weight:bold;
+	font-family:"Gothic";
+	line-height:30px;
+}
+.icon_campaign p a{
+	text-decoration:none;
+	color:#004EA2;
+}
+.campaign a:hover{
+	text-decoration:underline;
+}
+.icon_campaign{
+	display:flex;
+	margin-top:22px;
+	justify-content:flex-end;
+	position:relative;/*arrow_topのため*/
+}
+.arrow_top{
+	width:5px;
+	height:5px;
+	border:solid 2px;
+	border-color:transparent #3D6DFF #3D6DFF transparent;
+	transform:rotate(-45deg);
+	position:absolute;
+	top:8px;
+	right:-48px;
+}	
+/*画像メニュー*/
+.menu{
+	display:flex;
+	margin-top:15px;
+}
+.menu img{
+	margin-right:20px;
+}
+/*震災関連のお知らせ*/
+.shinsai{
+	width:690px;
+	height:auto;
+}
+.shinsai p{
+	margin-top:20px;
+	border-top:dotted 1px #000000;
+	border-bottom:dotted 1px #000000;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:25px;
+	font-size:14px;
+	background:url(images/icon77bank02.png) 5px no-repeat;
+}
+.news a{
+	color:#004EA2;
+	text-decoration:none;
+}
+.news:hover{
+	text-decoration:underline;
+}
+
+/*インフォメーション*/
+.info{
+	width:690px;
+	height:115px;
+	margin-top:20px;
+	background-color:#EFF5FE;
+	border:solid 1px #DEDEDE;
+}
+.info ul{
+	width:670px;
+	height:95px;
+	margin:10px;
+	background-color: #ffffff;
+	border:solid 1px #DEDEDE;
+	display:flex;
+}
+.info ul li{
+	padding:10px;
+	margin:0 auto;
+	width:133px;
+	border-right:dashed 1px #7FA3CC;
+	position:relative;
+}
+.info ul li:last-child{
+	border-right:none;
+}
+
+.info ul li a{
+	width:113px;
+	height:93px;
+	text-decoration:none;
+	font-size:16px;
+	font-weight:bold;
+	color:#265DB6;
+	display:block;
+	text-align:center;
+	line-height:25px;
+}
+.info ul li:after{
+	position:absolute;
+	content:url(images/icon77bank03.png);
+	right:60px;
+	top:65px;
+}
+.info ul li:first-child a{
+	font-size:14px;
+	line-height:15px;
+}
+
+
+/*右側コンテンツバー*/
+/*右側トップ（スマホ口座開設）*/
+.righttop{
+	width:258px;
+	height:110px;
+	border:solid 1px #DCE6F5;
+	background-color:#EFF5FE;
+	border-radius:3px;
+}
+.righttop img{
+	width:238px;
+	height:90px;
+	margin-left:10px;
+	margin-top:10px;
+	box-shadow:#CACACA 2px 2px 2px;
+}
+/*個人のお客様・法人のお客さま*/
+.personal, .corporate{
+	width:258px;
+	height:auto;
+}
+.personal p, .corporate p{
+	color:#004EA2;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	margin-top:17px;
+	margin-bottom:10px;
+}
+.personal p span, .corporate p span{
+	font-size:22px;
+}
+
+/*ログインメニュー*/
+.login{
+	width:260px;
+	height:308px;
+	border:solid 1px #D9D9D9;
+	background-color:#F0F0F0;
+	border-radius:3px;
+}
+.pinkbutton, .bluebutton{
+	width:238px;
+	height:60px;
+	margin-left:10px;
+	margin-top:10px;
+	border-radius:3px;
+	position:relative;/*arrow_fのため*/
+}
+.pinkbutton{
+	background:linear-gradient(to bottom, #EB4396, #EE78B3);
+	box-shadow:#CE679B -3px -3px 4px inset;
+}
+.bluebutton{
+	background:linear-gradient(to bottom, #2361E0, #638EE5);
+	box-shadow:#5A7EC5 -3px -3px 4px inset;
+}	
+.pinkbutton p, .bluebutton p{
+	color:#ffffff;
+	text-align:center;
+	line-height:25px;
+	padding:10px;
+	font-size:14px;
+}
+.bluebutton p{
+	letter-spacing:normal;
+	font-size:12px;
+}
+.pinkbutton p span{
+	font-weight:bold;
+}
+.bluebutton p span{
+	font-weight:bold;
+	font-size:16px;
+}
+.arrow_f{
+	width:5px;
+	height:5px;
+	border:solid 2px;
+	border-color:transparent #fff #fff transparent;
+	transform:rotate(-45deg);
+	position:absolute;
+	top:35px;
+	right:10px;
+}
+
+
+
+
+.buttons{
+	display:flex;
+	padding:10px;
+	border-bottom:solid 1px #D9D9D9;
+}
+.b_01, .b_02, .b_03, .b_04{
+	width:113px;
+	height:43px;
+	background-color:#ffffff;
+	border:solid 1px #C9C9C9;
+	border-radius:3px;
+	box-shadow:#ececec -3px -3px 4px inset;
+	position:relative;/*arrowのための一行*/
+}
+.b_01, .b_03{
+	margin-right:10px;
+}
+.b_01 p, .b_02 p, .b_03 p, .b_04 p{
+	font-size:12px;
+	padding:10px;
+	font-weight:bold;
+	text-align:center;
+}
+.b_01 p, .b_02 p{
+	color:#DD66A1;
+}
+.b_03 p, .b_04 p{
+	color:#799AFF;
+}
+.b_02 p, .b_04 p{
+	line-height:20px;
+}
+.cashcard p{
+	color:#666666;
+	font-size:14px;
+	padding-top:20px;
+	padding-left:30px;
+}
+.arrow_b, .arrow_p{
+	width:5px;
+	height:5px;
+	border:solid 2px;
+	transform:rotate(-45deg);
+	position:absolute;
+	top:15px;
+	right:10px;
+
+}
+.arrow_b{
+	border-color:transparent #799AFF #799AFF transparent;
+}
+.arrow_p{
+	border-color:transparent #DD66A1 #DD66A1 transparent;
+}
+/*セブンメイトwebサービス・店舗・CSコーナー*/
+.rightbottom{
+	width:258px;
+	height:77px;
+	background-color:#F0F0F0;
+	border:solid 1px #d9d9d9;
+	border-radius:3px;
+	margin-bottom:20px;
+}
+.greenbutton, .skybluebutton{
+	width:238px;
+	height:58px;
+	margin-left:10px;
+	margin-top:10px;
+	border-radius:3px;
+	position:relative;/*arrow_ffのため*/
+}
+.greenbutton{
+	background:linear-gradient(to bottom, #82C40F, #A4D451);
+	box-shadow:#8EB44D -3px -3px 4px inset;
+}
+.skybluebutton{
+	background:linear-gradient(to bottom, #0EA1F6, #50BAF9);
+	box-shadow:#50A6D8 -3px -3px 4px inset;
+}
+.greenbutton p, .skybluebutton p{
+	color:#ffffff;
+	text-align:center;
+	line-height:40px;
+	padding:10px;
+	font-size:16px;
+}
+.greenbutton p span{
+	font-weight:bold;
+	font-size:18px;
+}
+.arrow_ff{
+	width:5px;
+	height:5px;
+	border:solid 2px;
+	border-color:transparent #fff #fff transparent;
+	transform:rotate(-45deg);
+	position:absolute;
+	top:25px;
+	right:10px;
+
+}
+/*二段目コンテンツ*/
+.second_content{
+	background-color:#f0f0f0;
+	width:100%;
+	height:400px;
+	padding-top:30px;
+}
+.tabs{
+	width:980px;
+	margin:0 auto;
+}
+.tabs ul{
+	display:flex;
+	justify-content:space-between;
+}
+.tabs ul li{
+	width:145px;
+	height:55px;
+	background-color:#CFE1FE;
+	border:solid 1px #BAD2F8;
+	border-radius:3px 3px 0 0;
+}
+.tabs ul li a{
+	text-decoration:none;
+	color:#215AB4;
+	font-weight:bold;
+	display:block;
+	text-align:center;
+	line-height:55px;
+}
+.tabs ul li:nth-child(2) a{
+	line-height:30px;
+}
+
+.various{
+	width:980px;
+	height:300px;
+	margin:0 auto;
+	background-color:#ffffff;
+	padding-top:20px;
+}
+.box01, .box02{
+	display:flex;
+}
+
+.box01 li, .box02 li{
+	margin:10px 20px;
+	position:relative;
+}
+.box01 li::after, .box02 li::after{
+	position:absolute;
+	content:"";
+	width:1px;
+	height:105px;
+	right:-20px;
+	top:0;
+	border-right:dotted 1px #cccccc;
+}
+.box01 li:last-child::after, .box02 li:last-child::after{
+	content:none;
+}
+
+/*三段目コンテンツ*/
+.third{
+	width:100%;
+	height:auto;
+}
+.container{
+	width:980px;
+	margin:0 auto;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.container img{
+	margin:0 auto;
+	display:block;
+	width:256px;
+}
+.container ul{
+	width:600px;
+	margin:0 auto;
+}
+.robots li, .girls li{
+	display:inline-block;
+	margin-right:40px;
+}
+.robots li:last-child, .girls li:last-child{
+	margin-right:none;
+}
+/*ニュースリリース以下*/
+.newsrelease{
+	width:980px;
+	margin:0 auto;
+}
+.newsrelease ul{
+	border-bottom:solid 5px #225AB4;
+	display:flex;
+	width:980px;
+}
+.newsrelease ul li{
+	position:relative;/*arrow_lt, arrow_rtのため*/
+}
+.release{
+	width:485px;
+	height:40px;
+	background-color:#225AB4;
+	border-radius:5px 5px 0 0;
+}
+.release a{
+	color:#ffffff;
+	font-weight:bold;
+	text-decoration:none;
+	display:block;
+	text-align:center;
+	padding-top:10px;
+}
+.notice{
+	width:485px;
+	background-color:#CFE1FE;
+	border:solid 1px #BAD2F8;
+	border-radius:5px 5px 0 0;
+	margin-left:10px;
+}
+.notice a{
+	color:#225AB4;
+	font-weight:bold;
+	text-decoration:none;
+	display:block;
+	text-align:center;
+	padding-top:10px;
+}
+.arrow_lt, .arrow_rt{
+	width:5px;
+	height:5px;
+	border:solid 2px;
+	transform:rotate(45deg);
+	position:absolute;
+	top:15px;
+	right:30px;
+}
+.arrow_lt{
+	border-color:transparent #fff #fff transparent;
+}	
+.arrow_rt{
+	border-color:transparent #3469BC #3469BC transparent;
+}
+/*ニュースリリース中身*/
+.plans{
+	width:980px;
+	margin:0 auto;
+}
+.plans tr{
+	border-bottom:dotted 1px #333333;
+}
+.plans tr::after{
+	content:url("images/icon77bank02.png");
+}
+.plans td{
+	padding:10px;
+	font-size:14px;
+	text-align:left;
+}
+.plans td a{
+	text-decoration:none;
+	color:#333333;
+}
+.plans td a:hover{
+	text-decoration:underline;
+	color:#225AB4;
+}
+.plans td a::after{
+	content:url("images/mark01.png");
+}
+.date{
+	width:150px;
+}
+
+/*一覧はこちらボタン*/
+.allhere{
+	width:220px;
+	height:45px;
+	background-color:#EEF4FD;
+	border:solid 1px #BACAE3;
+	border-radius:5px;
+	margin:30px auto;
+	box-shadow:#E2E8F1 -4px -4px 4px inset;
+}
+.allhere p{
+	text-align:center;
+	padding:15px;
+	position:relative;
+}
+.allhere p a{
+	text-decoration:none;
+	color:#333333;
+	display:block;
+}
+.allhere p::after{
+	content:url("images/icon77bank02.png");
+	position:absolute;
+	right:5px;
+	bottom:10px;
+}
+
+/*関連リンク*/
+.relate_link{
+	width:980px;
+	margin:50px auto;
+}
+.relate{
+	display:flex;
+	justify-content:space-between;
+}
+.relate li{
+	width:225px;
+	height:10px;
+	background:linear-gradient(to bottom, #3974C2 0%, #3974C2 50%, #265FB7 50%, #265FB7 100%);
+	margin-right:20px;
+	padding:20px 10px;
+	text-align:center;
+	position:relative;
+}
+.relate li:last-child{
+	margin-right:0;
+}
+.arrows{
+	width:5px;
+	height:5px;
+	border:solid 2px;
+	border-color:transparent #fff #fff transparent;
+	transform:rotate(-45deg);
+	position:absolute;
+	top:20px;
+	right:10px;
+}
+.relate li:last-child{
+	margin-right:none;
+}
+.relate li a{
+	text-decoration:none;
+	list-style:none;
+	color:#ffffff;
+}
+
+/*下段コンテンツ*/
+.lastcontent{
+	width:100%;
+	border-top:solid 3px #D2DFF2;
+	background:linear-gradient(to bottom, #EEF4FD 0%, #ffffff 5%);
+}
+.secure{
+	width:980px;
+	margin:0 auto;
+}
+.secure h2{
+	color:#215AB4;
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+	margin-top:30px;
+	position:relative;
+}
+.secure h2::before{
+	content:url("images/mark02.png");
+	position:absolute;
+	left:310px;
+	top:-15px;
+}
+.secure h3{
+	margin-top:30px;
+	margin-bottom:10px;
+	color:#FF0000;
+	border-left:solid 5px #FF0000;
+	padding-left:5px;
+	font-weight:bold;
+	font-size:16px;
+}
+.caution{
+	margin-bottom:30px;
+}
+.caution li{
+	padding:15px;
+	border-top:dotted 1px #CC9999;
+	background-color:#FFF2EF;
+	font-size:14px;
+	position:relative;/*arrow_rのため*/
+}
+.caution li:last-child{
+	border-bottom:dotted 1px #CC9999;
+}
+.caution li a{
+	text-decoration:none;
+	color:#FF0000;
+	padding-left:15px;
+}
+.arrow_r{
+	width:5px;
+	height:5px;
+	border:solid 2px;
+	border-color:transparent #E73512 #E73512 transparent;
+	transform:rotate(-45deg);
+	position:absolute;
+	top:15px;
+	left:10px;
+}
+/*注意喚起お知らせ*/
+.alert{
+	display:flex;
+}
+.alert_left{
+	width:690px;
+	height:auto;
+}
+.alert_left ul li{
+	padding:15px;
+	border-bottom:dotted 1px #737373;
+	position:relative;
+}
+.alert_left ul li a{
+	text-decoration: none;
+	color:#3367BA;
+	padding-left:20px;
+}
+.alert_left ul li::before{
+	content:url("images/icon77bank02.png");
+	position:absolute;
+	top:15px;
+}
+/*注意喚起ボタン*/
+.alert_right{
+	width:260px;
+	height:350px;
+	margin-left:30px;
+}
+.alert_right p{
+	width:208px;
+	height:auto;
+	background-color:#ffffff;
+	border:solid 1px #C9C9C9;
+	padding:20px;
+	border-radius:3px;
+	box-shadow:#E9E9E9 -4px -4px 4px inset;
+	font-weight:bold;
+	font-size:14px;
+	margin-bottom:25px;
+	text-align:center;
+	position:relative;
+	padding-right:30px;
+}
+.alert_right p a{
+	text-decoration:none;
+}
+.alert_right p span{
+	color:#FF0000;
+}
+.alert_right p::after{
+	content:url("images/mark03.png");
+	position:absolute;
+	right:0;
+	top:10px;
+}
+/*注意喚起バナー*/
+.alert_banner{
+	text-align:center;
+	margin-bottom:30px;
+}
+
+/*おすすめ情報*/
+.recommend{
+	width:980px;
+	margin:50px auto;
+}
+.recommend h3{
+	font-size:24px;
+	font-weight:bold;
+	padding-bottom:20px;
+	padding-left:40px;
+	background:url(images/mark04.png) no-repeat;
+	border-bottom:solid 5px #D5E2F4;
+	position:relative;
+	margin-bottom:20px;
+}
+.recommend h3::after{
+	position:absolute;
+	content:"";
+	border-bottom:solid 5px #225AB4;
+	width:25%;
+	bottom:-5px;
+	left:0;
+}
+.recommend ul{
+	display:flex;
+	width:980px;
+	height:auto;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+/*フッター*/
+footer{
+	width:100%;
+	height:120px;
+	background-color:#225AB4;
+/*	padding:20px;*/
+	padding: 10px 0;
+	position:relative;
+}
+footer ul{
+	width:980px;
+	margin:0 auto;
+}
+footer ul li{
+	display:inline-block;
+	margin:10px;
+	font-size:14px;
+	border-right:solid 1px #ffffff;
+	padding-right:30px;
+}
+footer ul li:nth-child(4), footer ul li:nth-child(7){
+	border-right:none;
+	padding-right:none;
+}
+footer ul li a{
+	text-decoration:none;
+	color:#ffffff;
+}
+footer ul li a:hover{
+	text-decoration:underline;
+}
+footer p{
+	text-align:center;
+	color:#ffffff;
+	margin:10px;
+	font-size:10px;
+}
+/*ページトップへタブ*/
+.totop{
+	display:flex;
+	position:absolute;
+	top:-30px;
+	right:230px;
+}
+.totop p{
+	color:#225AB4;
+	font-size:16px;
+}
+.totop p a{
+	text-decoration:none;
+}
+.totop p a:hover{
+	text-decoration:underline;
+}
+.tab{
+	width:30px;
+	height:30px;
+	background-color:#225AB4;
+	border-radius:5px 5px 0 0;
+	position:relative;
+}
+.tab a{
+	display:block;
+}
+.arrow{
+	width:5px;
+	height:5px;
+	border:solid 2px;
+	border-color:#fff #fff transparent transparent;
+	transform:rotate(-45deg);
+	position:absolute;
+	top:10px;
+	left:9px;
+}
